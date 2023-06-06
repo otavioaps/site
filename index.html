@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Centered Text Example</title>
+  <style>
+body{
+	color: #616b71;
+	background-color: #e9e9e9;
+	font-family: arial;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+}
+
+.centered-text {
+  text-align: center;
+}
+
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+@keyframes fontResize {
+  0% {
+    font-size: 25px;
+  }
+  50% {
+    font-size: 20px;
+  }
+  100% {
+    font-size: 25px;
+  }
+}
+
+.title {
+  animation: fontResize 2s infinite;
+}
+
+  </style>
+</head>
+<body>
+	<div class="container">
+	  <div class="centered-text">
+		<div class="title" >
+		Soon
+		</div>
+	  </div>
+	</div>
+</body>
+</html>
